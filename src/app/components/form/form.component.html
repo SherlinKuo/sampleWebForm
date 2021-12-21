@@ -1,0 +1,15 @@
+<h2>預約系統</h2>
+<div class="dataForm">
+    <ul >
+        <li>
+            姓名 : <input type="text" [(ngModel)]="profile.name"/>
+        </li>
+    </ul>
+    <br>
+    <button (click)="check()">以上輸入的姓名為：</button>
+</div>
+
+<div class="dataForm">
+    <h4>已收集到的資訊</h4>
+    <pre>{{profile | json}}</pre>
+</div>
