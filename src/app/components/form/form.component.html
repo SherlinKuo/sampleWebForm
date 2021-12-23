@@ -2,8 +2,15 @@
 <div class="dataForm">
     <ul >
         <li>
-            姓名 : <input type="text" [(ngModel)]="profile.name"/>
+            姓名 : <input type="text" [(ngModel)]="profile.name" class="nameInput"/>
         </li>
+
+        <!-- input type="radio" 用法 -->
+        <li>性別：
+            <input type="radio" value="1" name="sex" id="sex1" [(ngModel)]="profile.sex"> <label for="sex1"> 男 </label>
+            <input type="radio" value="2" name="sex" id="sex2" [(ngModel)]="profile.sex"> <label for="sex2"> 女 </label>
+        </li>
+    
     </ul>
     <br>
     <button (click)="check()">以上輸入的姓名為</button>

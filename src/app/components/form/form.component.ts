@@ -10,7 +10,8 @@ export class FormComponent implements OnInit {
   // name = "王大明";
 
   profile = {
-    name : ''
+    name : '',
+    sex : ''
   }
   constructor() { }
 
