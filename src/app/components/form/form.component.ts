@@ -11,8 +11,11 @@ export class FormComponent implements OnInit {
 
   profile = {
     name : '',
-    sex : ''
+    sex : '',
+    job : ''
   }
+
+  jobList = ["學生", "老師", "工程師", "自由業", "其他"]
   constructor() { }
 
   ngOnInit(): void {
