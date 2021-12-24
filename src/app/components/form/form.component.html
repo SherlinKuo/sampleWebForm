@@ -54,9 +54,18 @@
             </span>
         </li>
 
-        <li>
+
+        <!-- textarea  用法-->
+        <!-- <li>
             想學習的語言或建議：
             <textarea rows=5 cols=22 [(ngModel)]="profile.message" style="resize:none;" placeholder="請提供您的寶貴意見"></textarea>
+        </li> -->
+
+        <li>
+            <mat-form-field>
+                <mat-label>想學習的語言或建議：</mat-label>
+                <textarea matInput placeholder="請提供您的寶貴意見" [(ngModel)]="profile.message"  [matTextareaAutosize]="true"></textarea>
+            </mat-form-field>
         </li>
 
     </ul>
