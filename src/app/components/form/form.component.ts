@@ -34,7 +34,8 @@ export class FormComponent implements OnInit {
         lang: "Kotlin",
         checked: false
       },          
-    ]
+    ],
+    message: ''
   }
 
   jobList = ["學生", "老師", "工程師", "自由業", "其他"]

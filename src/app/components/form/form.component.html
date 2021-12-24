@@ -53,6 +53,12 @@
                 <mat-checkbox [(ngModel)]="item.checked">{{item.lang}}</mat-checkbox>
             </span>
         </li>
+
+        <li>
+            想學習的語言或建議：
+            <textarea rows=5 cols=22 [(ngModel)]="profile.message" style="resize:none;" placeholder="請提供您的寶貴意見"></textarea>
+        </li>
+
     </ul>
     <br>
     <button (click)="check()">以上輸入的姓名為</button>
