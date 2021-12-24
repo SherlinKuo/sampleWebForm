@@ -12,10 +12,33 @@ export class FormComponent implements OnInit {
   profile = {
     name : '',
     sex : '',
-    job : ''
+    job : '',
+    programLang :[
+      {
+        lang: "TypeScript",
+        checked: false
+      },
+      {
+        lang: "JavaScript",
+        checked: false
+      },
+      {
+        lang: "Python",
+        checked: false
+      },      
+      {
+        lang: "Java",
+        checked: true
+      },    
+      {
+        lang: "Kotlin",
+        checked: false
+      },          
+    ]
   }
 
   jobList = ["學生", "老師", "工程師", "自由業", "其他"]
+  // programLangs = ["TypeScript", "JavaScript", "Python", "Java", "Kotlin"]
   constructor() { }
 
   ngOnInit(): void {

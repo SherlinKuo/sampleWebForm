@@ -2,7 +2,7 @@ h2{
     text-align: center;
 }
 .dataForm{
-    width: 400px;
+    width: 50%;
     margin: 10px auto;
     padding: 20px;
     border: 1px solid rgb(224, 224, 224);
@@ -11,6 +11,9 @@ h2{
         height: 40px;
     }
     mat-radio-button{
+        margin: 3px;
+    }
+    mat-checkbox{
         margin: 3px;
     }
 }

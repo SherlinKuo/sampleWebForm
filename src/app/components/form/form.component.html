@@ -36,7 +36,22 @@
                     <mat-option [value]="item" *ngFor="let item of jobList">{{item}}</mat-option>
                 </mat-select>
             </mat-form-field>
+        </li>
 
+        <!-- input type="checkbox" 用法-->
+        <!-- <li>
+            感興趣的語言：
+            <span *ngFor="let item of profile.programLang; let key=index;">
+                <input type="checkbox" [(ngModel)]="item.checked" [id]="'check' + key">
+                <label [for]="'check' + key">{{item.lang}}</label>
+            </span>
+        </li> -->
+
+        <li>
+            感興趣的語言：
+            <span *ngFor="let item of profile.programLang">
+                <mat-checkbox [(ngModel)]="item.checked">{{item.lang}}</mat-checkbox>
+            </span>
         </li>
     </ul>
     <br>
