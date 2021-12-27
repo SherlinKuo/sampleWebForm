@@ -11,7 +11,7 @@ export class FormComponent implements OnInit {
 
   profile = {
     name : '',
-    sex : '',
+    gender : '',
     job : '',
     programLang :[
       {
